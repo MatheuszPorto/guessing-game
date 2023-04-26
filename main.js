@@ -1,4 +1,3 @@
-// Variables
 const screen1 = document.querySelector(".screen1")
 const screen2 = document.querySelector(".screen2")
 let randomNumber = Math.round(Math.random() * 10)
@@ -6,7 +5,6 @@ const btnTry = document.querySelector('#btnTry')
 const btnReset = document.querySelector('#btnReset')
 let xAttempts = 1
 
-// Events
 btnTry.addEventListener('click' , handleTryClick )
 btnReset.addEventListener('click' , handleResetClick )
 document.addEventListener('keydown' , function (e) {
@@ -15,9 +13,8 @@ document.addEventListener('keydown' , function (e) {
     }
 })
 
-// Function
 function handleTryClick (event) {
-    event.preventDefault() // Remova o padrão
+    event.preventDefault() 
     
     const inputNumber = document.querySelector("#inputNumber")
 
